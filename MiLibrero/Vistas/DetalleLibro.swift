@@ -27,6 +27,16 @@ struct DetalleLibro: View {
 
             Label(libro.estado.descripcion(), systemImage: libro.estado.icono())
                 .foregroundStyle(libro.estado.color())
+            
+            Text("Sinopsis")
+                    .font(.headline)
+            
+            Text(libro.sinopsis ?? "Sin sinopsis")
+                    .padding(4)
+                    .background(Color(.systemGray6)) //
+                    .cornerRadius(8)
+                
+    
 
             Spacer()
         }

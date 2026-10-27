@@ -26,6 +26,7 @@ struct FilaLibro: View {
                     .foregroundStyle(.tertiary)
             }
             
+            
         }
         
     }
